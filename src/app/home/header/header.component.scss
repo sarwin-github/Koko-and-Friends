@@ -1,0 +1,175 @@
+.text-header{
+    color: #64ffda;
+}
+
+.text-content{
+    font-weight: 100;
+    color: #64ffda;
+}
+
+.view-more{
+    color: #64ffda;
+    border: solid 1px #64ffda;
+    border-radius: 0;
+    padding: 14px 30px 14px 30px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.view-more:hover{
+    color: black;
+    border: solid 1px gray;
+    border-radius: 0;
+    padding: 14px 30px 14px 30px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px)  and (max-device-width: 479px) {
+    .carousel-item {
+      position: relative;
+      height: 135vh ;
+      min-height: 300px;
+      padding: 0 !important;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .carousel-content {
+      position: absolute;
+      top: 12%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      color: white;
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+
+    h1{
+        font-size: 23px !important;
+        font-family: arial;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px)  and (max-device-width: 767px){
+    .carousel-item {
+      height: 140vh;
+      min-height: 300px;
+
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .carousel-content {
+      position: absolute;
+      top: 20%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      color: white;
+
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+
+    h1{
+        font-size: 23px !important;
+        font-family: arial;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)  and (max-device-width: 991px){
+    .carousel-item {
+      height: 120vh;
+      min-height: 300px;
+
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .carousel-content {
+      position: absolute;
+      top: 10%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      color: white;
+
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+
+    h1{
+        font-size: 28px !important;
+        font-family: arial;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .carousel-item {
+      height: 85vh;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .carousel-content {
+      position: inherit;
+      top: 25%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      color: white;
+      margin: 0 auto;
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+
+    h1{
+        font-size: 50px !important;
+        font-family: arial;
+    }
+
+}
+
+
+.carousel-item:before {
+    content: "";
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    background: rgba(230,114,41, 0.7);
+    background: -moz-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(230,114,41, 0.7)), color-stop(100%, rgba(255,240,222, 0.7)));
+    background: -webkit-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
+    background: -o-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
+    background: -ms-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
+    background: linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67229', endColorstr='#fff0de', GradientType=1 );
+}
+
+
+.card-header-item{
+    background: rgba(0,0,0,0.5)
+}

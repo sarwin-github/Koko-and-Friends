@@ -1,5 +1,4 @@
 
-
 .social{
     color: whitesmoke !important;
     font-weight: 500px !important;
@@ -10,33 +9,6 @@
     font-weight: 500px !important;
 }
 
-
-
-.bg-img {
-    background: url(/assets/images/header.jpg)no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    z-index: 0;
-}
-
-.bg-img:before {
-    content: "";
-    position: absolute;
-    left: 0; 
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    background: rgba(230,114,41, 0.7);
-    background: -moz-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(230,114,41, 0.7)), color-stop(100%, rgba(255,240,222, 0.7)));
-    background: -webkit-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
-    background: -o-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
-    background: -ms-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
-    background: linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67229', endColorstr='#fff0de', GradientType=1 );
-}
 
 p{
     font-size: 13px !important;
@@ -70,204 +42,12 @@ p{
     color: #ad1457;
 }
 
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
-    .carousel-item {
-      position: relative;
-      height: 135vh ;
-      min-height: 300px;
-      padding: 0 !important;
-      background: no-repeat center center scroll;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .carousel-content {
-      position: absolute;
-      top: 12%;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      z-index: 20;
-      color: white;
-
-      text-shadow: 0 1px 2px rgba(0,0,0,.6);
-    }
-
-    h1{
-        font-size: 23px !important;
-        font-family: arial;
-    }
-}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-    .carousel-item {
-      height: 140vh;
-      min-height: 300px;
-
-      background: no-repeat center center scroll;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .carousel-content {
-      position: absolute;
-      top: 20%;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      z-index: 20;
-      color: white;
-
-      text-shadow: 0 1px 2px rgba(0,0,0,.6);
-    }
-
-    h1{
-        font-size: 23px !important;
-        font-family: arial;
-    }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-    .carousel-item {
-      height: 120vh;
-      min-height: 300px;
-
-      background: no-repeat center center scroll;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .carousel-content {
-      position: absolute;
-      top: 10%;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      z-index: 20;
-      color: white;
-
-      text-shadow: 0 1px 2px rgba(0,0,0,.6);
-    }
-
-    h1{
-        font-size: 28px !important;
-        font-family: arial;
-    }
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-    .carousel-item {
-      height: 85vh;
-      min-height: 300px;
-
-      background: no-repeat center center scroll;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .carousel-content {
-      position: absolute;
-      top: 25%;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      z-index: 20;
-      color: white;
-
-      text-shadow: 0 1px 2px rgba(0,0,0,.6);
-    }
-
-    h1{
-        font-size: 50px !important;
-        font-family: arial;
-    }
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-    .carousel-item {
-      height: 85vh;
-      min-height: 300px;
-
-      background: no-repeat center center scroll;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .carousel-content {
-      position: absolute;
-      top: 25%;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      z-index: 20;
-      color: white;
-
-      text-shadow: 0 1px 2px rgba(0,0,0,.6);
-    }
-
-    h1{
-        font-size: 50px !important;
-        font-family: arial;
-    }
-
-}
-
-.carousel-item:before {
-    content: "";
-    position: absolute;
-    left: 0; 
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    background: rgba(230,114,41, 0.7);
-    background: -moz-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(230,114,41, 0.7)), color-stop(100%, rgba(255,240,222, 0.7)));
-    background: -webkit-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
-    background: -o-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
-    background: -ms-linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
-    background: linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67229', endColorstr='#fff0de', GradientType=1 );
-}
-
-.view-more{
-    color: #64ffda;
-    border: solid 1px #64ffda;
-    border-radius: 0;
-    padding: 14px 30px 14px 30px;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.view-more:hover{
-    color: black;
-    border: solid 1px gray;
-    border-radius: 0;
-    padding: 14px 30px 14px 30px;
-    background-color: rgba(255,255,255,0.4);
-}
-
-.card-header-item{
-    background: rgba(0,0,0,0.5)
+.bg-about{
+    background: url(/assets/images/band.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .form-control{
@@ -291,51 +71,6 @@ h2{
     font-weight: 200;
 }
 
-.about-heading {
-  @media (min-width: 992px) {
-    .about-heading-img {
-      position: relative;
-      z-index: 0;
-    }
-    .about-heading-content {
-      margin-top: -20%;
-      position: relative;
-      z-index: 1;
-    }
-  }
-}
-
-.page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.section-heading {
-  text-transform: uppercase;
-  .section-heading-upper {
-    display: block;
-    font-size: 1rem;
-    font-weight: 800;
-  }
-  .section-heading-lower {
-    display: block;
-    font-size: 3rem;
-    font-weight: 100;
-  }
-}
-
-.bg-faded{
-    background: rgba(255,240,222, 0.9);
-    background: -moz-linear-gradient(45deg, rgba(255,240,222, 0.9) 0%, rgba(255,240,222, 0.9) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,240,222, 0.9)), color-stop(100%, rgba(255,240,222, 0.9)));
-    background: -webkit-linear-gradient(45deg, rgba(255,240,222, 0.9) 0%, rgba(255,240,222, 0.9) 100%);
-    background: -o-linear-gradient(45deg, rgba(255,240,222, 0.9) 0%, rgba(255,240,222, 0.9) 100%);
-    background: -ms-linear-gradient(45deg, rgba(255,240,222, 0.9) 0%, rgba(255,240,222, 0.9) 100%);
-    background: linear-gradient(45deg, rgba(255,240,222, 0.9) 0%, rgba(255,240,222, 0.9) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67229', endColorstr='#fff0de', GradientType=1 );
-}
-
-
 
 td{
     
@@ -347,14 +82,6 @@ tr{
     padding-bottom: 20px !important; 
 }
 
-.bg-about{
-    background: url(/assets/images/band.jpg); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-}
 
 .bg-gallery{
     background: url(/assets/images/band2.jpg)no-repeat center center; 
@@ -365,14 +92,7 @@ tr{
 
 }
 
-.bg-contactus{
-    background: url(/assets/images/band3.jpg); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 
-}
 
 .buy-ticket{
   position: relative;
@@ -380,4 +100,62 @@ tr{
   left: 0;
   top: 0;
   bottom: 0;
+}
+
+.item {
+  position: relative;
+  border: 1px solid #e2e2e2;
+  overflow: hidden;
+}
+
+.item img {
+  max-width: 100%;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.item:hover img {
+  cursor: pointer;
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  z-index: 0;
+  position: relative;
+}
+
+.item:before {
+    content: "";
+    color: white;
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    background: rgba(230,114,41, 0.2);
+    background: -moz-linear-gradient(45deg, rgba(230,114,41, 0.2) 0%, rgba(255,240,222, 0.2) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(230,114,41, 0.2)), color-stop(100%, rgba(255,240,222, 0.2)));
+    background: -webkit-linear-gradient(45deg, rgba(230,114,41, 0.2) 0%, rgba(255,240,222, 0.2) 100%);
+    background: -o-linear-gradient(45deg, rgba(230,114,41, 0.2) 0%, rgba(255,240,222, 0.2) 100%);
+    background: -ms-linear-gradient(45deg, rgba(230,114,41, 0.2) 0%, rgba(255,240,222, 0.2) 100%);
+    background: linear-gradient(45deg, rgba(230,114,41, 0.2) 0%, rgba(255,240,222, 0.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67229', endColorstr='#fff0de', GradientType=1 );
+}
+
+.navigation-button{
+    position: fixed;
+    top: 85%;
+    right: 3%;
+    z-index: 2;
+    color: #263238;
+    cursor: pointer;
+    font-size: 35px;
+
+    p{
+        font-weight: 600;
+    }
+}
+
+.navigation-button:hover{
+    color: #ad1457;
 }

@@ -1,0 +1,49 @@
+.bg-contactus{
+    background: url(/assets/images/band3.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+
+.bg-gallery{
+    background: url(/assets/images/band2.jpg)no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.bg-about{
+    background: url(/assets/images/band.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.text-header{
+    color: #64ffda;
+}
+
+h2{
+    font-weight: 200;
+}
+
+
+.hover-zoom {
+  transition: all 0.3s ease-in-out;
+  background: url(/assets/images/band3.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  &:hover {
+    background-size: 100%;
+    background-position: center; 
+  }
+}
