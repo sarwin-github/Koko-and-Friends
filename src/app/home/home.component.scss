@@ -70,16 +70,167 @@ p{
     color: #ad1457;
 }
 
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .carousel-item {
+      position: relative;
+      height: 135vh ;
+      min-height: 300px;
+      padding: 0 !important;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
 
-.carousel-item {
-  height: 85vh;
-  min-height: 300px;
+    .carousel-content {
+      position: absolute;
+      top: 12%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      color: white;
 
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+
+    h1{
+        font-size: 23px !important;
+        font-family: arial;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .carousel-item {
+      height: 140vh;
+      min-height: 300px;
+
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .carousel-content {
+      position: absolute;
+      top: 20%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      color: white;
+
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+
+    h1{
+        font-size: 23px !important;
+        font-family: arial;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .carousel-item {
+      height: 120vh;
+      min-height: 300px;
+
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .carousel-content {
+      position: absolute;
+      top: 10%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      color: white;
+
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+
+    h1{
+        font-size: 28px !important;
+        font-family: arial;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .carousel-item {
+      height: 85vh;
+      min-height: 300px;
+
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .carousel-content {
+      position: absolute;
+      top: 25%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      color: white;
+
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+
+    h1{
+        font-size: 50px !important;
+        font-family: arial;
+    }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .carousel-item {
+      height: 85vh;
+      min-height: 300px;
+
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .carousel-content {
+      position: absolute;
+      top: 25%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      color: white;
+
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+
+    h1{
+        font-size: 50px !important;
+        font-family: arial;
+    }
+
 }
 
 .carousel-item:before {
@@ -98,25 +249,6 @@ p{
     background: linear-gradient(45deg, rgba(230,114,41, 0.7) 0%, rgba(255,240,222, 0.7) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67229', endColorstr='#fff0de', GradientType=1 );
 }
-
-.carousel-content {
-  position: absolute;
-  top: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  z-index: 20;
-  color: white;
-
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-
-h1{
-    font-size: 50px !important;
-    font-family: arial;
-}
-
 
 .view-more{
     color: #64ffda;
@@ -242,3 +374,10 @@ tr{
 
 }
 
+.buy-ticket{
+  position: relative;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
