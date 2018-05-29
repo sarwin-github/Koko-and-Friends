@@ -1,3 +1,33 @@
+@mixin background-cover{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin set-header-height($height: 135vh){
+  height: $height;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+}
+
+@mixin set-carousel-content($top: 12%){
+  position: absolute;
+  top: $top;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+@mixin set-h1-size($font-size: 23px){
+  font-size: $font-size !important;
+  font-family: arial;
+}
+
 .text-header{
     color: #64ffda;
 }
@@ -13,14 +43,14 @@
     border-radius: 0;
     padding: 14px 30px 14px 30px;
     background-color: rgba(0,0,0,0.4);
-}
 
-.view-more:hover{
-    color: black;
-    border: solid 1px gray;
-    border-radius: 0;
-    padding: 14px 30px 14px 30px;
-    background-color: rgba(255,255,255,0.4);
+    &:hover{
+      color: black;
+      border: solid 1px gray;
+      border-radius: 0;
+      padding: 14px 30px 14px 30px;
+      background-color: rgba(255,255,255,0.4);
+    }
 }
 
 
@@ -28,129 +58,68 @@
 @media only screen and (min-width : 320px)  and (max-device-width: 479px) {
     .carousel-item {
       position: relative;
-      height: 135vh ;
-      min-height: 300px;
       padding: 0 !important;
-      background: no-repeat center center scroll;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+      @include set-header-height;
+      @include background-cover;
     }
 
     .carousel-content {
-      position: absolute;
-      top: 12%;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      z-index: 20;
-      color: white;
-      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+      @include set-carousel-content;
     }
 
     h1{
-        font-size: 23px !important;
-        font-family: arial;
+      @include set-h1-size;
     }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px)  and (max-device-width: 767px){
     .carousel-item {
-      height: 140vh;
-      min-height: 300px;
-
-      background: no-repeat center center scroll;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+      @include set-header-height(140vh);
+      @include background-cover;
     }
 
     .carousel-content {
-      position: absolute;
-      top: 20%;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      z-index: 20;
-      color: white;
-
-      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+      @include set-carousel-content(20%);
     }
 
     h1{
-        font-size: 23px !important;
-        font-family: arial;
+      @include set-h1-size;
     }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)  and (max-device-width: 991px){
     .carousel-item {
-      height: 120vh;
-      min-height: 300px;
-
-      background: no-repeat center center scroll;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+      @include set-header-height(120vh);
+      @include background-cover;
     }
 
     .carousel-content {
-      position: absolute;
-      top: 10%;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      z-index: 20;
-      color: white;
-
-      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+      @include set-carousel-content(10%);
     }
 
     h1{
-        font-size: 28px !important;
-        font-family: arial;
+      @include set-h1-size(28px);
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .carousel-item {
-      height: 85vh;
-      background: no-repeat center center scroll;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+      @include set-header-height(85vh);
+      @include background-cover;
     }
 
     .carousel-content {
-      position: inherit;
-      top: 25%;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      z-index: 20;
-      color: white;
-      margin: 0 auto;
-      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+      @include set-carousel-content(25%);
     }
 
     h1{
-        font-size: 50px !important;
-        font-family: arial;
+      @include set-h1-size(50px);
     }
 
 }
-
 
 .carousel-item:before {
     content: "";

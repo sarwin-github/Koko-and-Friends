@@ -1,28 +1,24 @@
-.bg-contactus{
-    background: url(/assets/images/band3.jpg); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+@mixin background-cover{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
+.bg-contactus{
+  background: url(/assets/images/band3.jpg); 
+  @include background-cover;
 }
 
 
 .bg-gallery{
-    background: url(/assets/images/band2.jpg)no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
+  background: url(/assets/images/band2.jpg)no-repeat center center; 
+  @include background-cover;
 }
 
 .bg-about{
-    background: url(/assets/images/band.jpg); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url(/assets/images/band.jpg); 
+  @include background-cover;
 }
 
 .text-header{
@@ -37,17 +33,11 @@ h2{
 .hover-zoom {
   transition: all 0.3s ease-in-out;
   background: url(/assets/images/band3.jpg); 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @include background-cover;
 
   &:hover {
     background-size: 100%;
     background-position: center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include background-cover;
   }
 }

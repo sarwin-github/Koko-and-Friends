@@ -92,8 +92,6 @@ tr{
 
 }
 
-
-
 .buy-ticket{
   position: relative;
   right: 0;
@@ -106,25 +104,24 @@ tr{
   position: relative;
   border: 1px solid #e2e2e2;
   overflow: hidden;
-}
 
-.item img {
-  max-width: 100%;
-  -moz-transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
+  img{
+    max-width: 100%;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
 
-.item:hover img {
-  cursor: pointer;
-  -moz-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
-  z-index: 0;
-  position: relative;
-}
+  &:hover img {
+    cursor: pointer;
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    z-index: 0;
+    position: relative;
+  }
 
-.item:before {
+  &:before{
     content: "";
     color: white;
     position: absolute;
@@ -140,6 +137,7 @@ tr{
     background: -ms-linear-gradient(45deg, rgba(230,114,41, 0.2) 0%, rgba(255,240,222, 0.2) 100%);
     background: linear-gradient(45deg, rgba(230,114,41, 0.2) 0%, rgba(255,240,222, 0.2) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67229', endColorstr='#fff0de', GradientType=1 );
+  }
 }
 
 .navigation-button{
@@ -151,11 +149,12 @@ tr{
     cursor: pointer;
     font-size: 35px;
 
+    &:hover{
+      color: #ad1457;
+    }
+
     p{
         font-weight: 600;
     }
 }
 
-.navigation-button:hover{
-    color: #ad1457;
-}
