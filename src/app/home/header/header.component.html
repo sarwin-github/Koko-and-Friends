@@ -1,10 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<header [@fadeInFrom]="state" class="shadow-sm">
+<header class="shadow-sm">
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <!-- Slide One - Set the background image for this slide in the line below -->
             <div class="carousel-item active" style="background-image: url('/assets/images/header.jpg')">
-                <div class="carousel-content w-75 card card-header-item">
+                <div class="carousel-content w-75 card card-header-item"  [@fadeIn] [@fadeInFrom]="state">
                     <div class="row">
                         <div class="col-md-6">
                             <img src="/assets/images/header-2.jpg" class="img img-fluid img-thumbnail">
@@ -26,7 +26,7 @@
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
             <div class="carousel-item" style="background-image: url('/assets/images/header-1.jpg')">
-                <div class="carousel-content w-75 card card-header-item">
+                <div class="carousel-content w-75 card card-header-item"  [@fadeInFrom]="state">
                     <div class="row">
                         
                         <div class="col-md-6">

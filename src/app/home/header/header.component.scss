@@ -107,7 +107,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .carousel-item {
-      @include set-header-height(85vh);
+      @include set-header-height(90vh);
       @include background-cover;
     }
 
