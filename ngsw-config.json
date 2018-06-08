@@ -7,8 +7,13 @@
       "files": [
         "/favicon.ico",
         "/index.html",
-        "/*.css",
-        "/*.js"
+        "/**/*.css",
+        "/**/*.js"
+      ],
+      "urls": [
+        "http://www.facebook.com/plugins/video.php?href=http%3A%2F%2Fwww.facebook.com%2Fryanabellanosa19%2Fvideos%2F1881681238516840%2F&show_text=0",
+        "http://www.facebook.com/plugins/video.php?href=http%3A%2F%2Fwww.facebook.com%2Fdinnokelz.collantes%2Fvideos%2F10209009441192712%2F&show_text=0",
+        "http://w.soundcloud.com/player/?url=http%3A//api.soundcloud.com/tracks/34788460&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
       ]
     }
   }, {
